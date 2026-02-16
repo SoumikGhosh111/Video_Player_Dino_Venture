@@ -1,16 +1,33 @@
-# React + Vite
+# Mobile-First Video Platform
+A high-performance, mobile-first video streaming application built with React and Vite. This project focuses on a seamless "YouTube-style" user experience, featuring persistent playback and gesture-based controls.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+### Mini-Player State
+Toggle between a full-screen view and a persistent bottom-docked mini-bar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Custom Control Suite
+10-second skip/rewind.
 
-## React Compiler
+Custom progress slider with time stamping.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Volume and mute toggling.
 
-## Expanding the ESLint configuration
+### Manual Fullscreen Toggle
+Custom button to trigger native browser fullscreen mode on mobile devices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Category Navigation
+A horizontally swipable category bar featuring "flick-scroll" physics. It allows for instant content filtering across the platform while maintaining a sticky position at the top of the viewport for constant accessibility.
+
+## Set-Up
+
+### Install dependencies
+```bash
+    npm install
+```
+
+### Run the Development Server
+You must use the --host flag to allow external (mobile) access
+```bash
+    npm run dev -- --host
+```
